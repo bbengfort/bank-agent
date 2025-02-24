@@ -1,0 +1,14 @@
+.chat-form {
+    position: sticky;
+    bottom: 20px;
+    width: 100%;
+    z-index: 1000;
+}
+
+.chat-form div {
+    width: 100%;
+}
+
+.chat-messages {
+    min-height: 800px;
+}

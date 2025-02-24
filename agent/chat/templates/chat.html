@@ -1,0 +1,39 @@
+{% extends 'page.html' %}
+{% load static %}
+
+{% block extra-stylesheets %}
+  <link rel="stylesheet" href="{% static 'css/chat.css' %}">
+{% endblock %}
+
+{% block content %}
+  <div class="chat-box">
+    <div class="chat-messages" id="chat-messages">
+      <!-- Chat messages will be appended here -->
+    </div>
+  </div>
+
+  <form id="chatForm" class="form chat-form d-flex flex-col align-items-center">
+    <div class="form-group me-auto">
+      <textarea
+        id="promptInput"
+        class="form-control"
+        placeholder="Enter your prompt here ..."
+        aria-label="Enter Prompt"
+        rows=3
+      /></textarea>
+      <div class="d-flex flex-row justify-content-between">
+        <small id="promptHelp" class="form-text text-muted">
+          Ask about your bank balance, list your accounts, or try to make a transfer.
+        </small>
+        <small>
+          <a href="#" id="logout">Logout</a>
+        </small>
+      </div>
+    </div>
+  </form>
+
+  <!-- Logout Form -->
+  <form id="logoutForm" class="hidden" method="post" action="{% url 'logout' %}">
+    {% csrf_token %}
+  </form>
+{% endblock %}

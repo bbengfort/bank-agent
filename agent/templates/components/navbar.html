@@ -1,0 +1,10 @@
+{% load static %}
+{% load gravatar %}
+<nav class="navbar sticky-top navbar-expand-sm navbar-light bg-white">
+  <div class="container">
+    <div class="d-flex d-row justify-content-between" style="width: 100%">
+      <img src="{% static 'img/bank-teller.png' %}" width="42" height="42" class="" alt="Banking Agent">
+      <img src="{{ user|gravatar }}" class="avatar-img rounded" width="42" height="42" alt="{{ user.username }}">
+    </div>
+  </div>
+</nav>

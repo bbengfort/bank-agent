@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>{% block title %}Agent | Rotational Labs{% endblock %}</title>
+
+  {% block meta %}
+  <!-- metadata -->
+  <meta name="author" content="{% block author %}Rotational Labs{% endblock %}">
+  {% endblock %}
+
+  {% block link %}
+  <!-- shortcut icon -->
+  <link rel="shortcut icon" href="{% static 'favicon.ico' %}">
+  {% endblock %}
+
+  {% block stylesheets %}
+  <!-- stylesheets -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootswatch@4.5.2/dist/flatly/bootstrap.min.css" integrity="sha384-qF/QmIAj5ZaYFAeQcrQ6bfVMAh4zZlrGwTPY7T/M+iTTLJqJBJjwwnsE5Y0mV7QK" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css" integrity="sha384-NvKbDTEnL+A8F/AA5Tc5kmMLSJHUO868P+lDtTpJIeQdGYaUIuLr4lVGOEA1OcMy" crossorigin="anonymous">
+  {% endblock %}
+
+  {% block extra-stylesheets %}{% endblock %}
+</head>
+<body class="{% block body-class %}{% endblock %}">
+  {% block body %}
+  {% endblock %}
+
+  {% block modals %}
+  <!-- hidden modals -->
+  {% endblock %}
+
+  {% block javascripts %}
+  <!-- javascript at the bottom of the page for faster loading -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.slim.min.js" integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8=" crossorigin="anonymous"></script>
+
+  <!-- homebrewed javascripts -->
+  <script src="{% static 'js/chat.js' %}"></script>
+  {% endblock %}
+</body>
+</html>

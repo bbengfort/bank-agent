@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block extra-stylesheets %}
+  <link rel="stylesheet" href="{% static 'css/login.css' %}">
+{% endblock %}
+
+{% block body-class %}text-center{% endblock %}
+
+{% block body %}
+  <form class="form-signin" role="form" action="{% url 'login' %}" method="post">
+    <img class="mb-4" src="{% static 'img/logo-white.png' %}" alt="" height="96">
+    <h1 class="h4 mb-3 font-weight-normal">Please sign in</h1>
+    <label for="username" class="sr-only">Username</label>
+    <input type="text" id="username" name="username" class="form-control" placeholder="Username" required autofocus>
+    <label for="password" class="sr-only">Password</label>
+    <input type="password" id="password" name="password" class="form-control" placeholder="Password" required>
+    <button class="btn btn-lg btn-primary btn-block mt-4" type="submit">Sign in</button>
+    <p class="mt-4 mb-3 text-white">Rotational Labs</p>
+    {% csrf_token %}
+  </form>
+{% endblock %}
