@@ -6,6 +6,7 @@ djangorestframework==3.15.2
 google-genai==1.2.0
 psycopg2-binary==2.9.10
 python-dotenv==1.0.1
+requests==2.32.3
 vertexai==1.71.1
 
 # Development Dependencies
@@ -49,7 +50,6 @@ vertexai==1.71.1
 # pydantic_core==2.29.0
 # pyflakes==3.2.0
 # python-dateutil==2.9.0.post0
-# requests==2.32.3
 # rsa==4.9
 # shapely==2.0.7
 # six==1.17.0

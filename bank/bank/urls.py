@@ -22,7 +22,7 @@ from finance.views import AccountsViewSet, TransferViewSet
 
 router = routers.DefaultRouter()
 router.register(r"accounts", AccountsViewSet)
-router.register(r"transactions", TransferViewSet)
+router.register(r"transfer", TransferViewSet)
 
 
 urlpatterns = [
