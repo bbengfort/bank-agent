@@ -108,6 +108,7 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "rest_framework",
+    "rest_framework.authtoken",
     "finance",
 ]
 
@@ -194,6 +195,7 @@ AUTH_PASSWORD_VALIDATORS = [
 REST_FRAMEWORK = {
     ## API Authentication
     "DEFAULT_AUTHENTICATION_CLASSES": (
+        "rest_framework.authentication.TokenAuthentication",
         "rest_framework.authentication.SessionAuthentication",
     ),
     ## Default permissions to access the API

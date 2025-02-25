@@ -18,11 +18,11 @@ from django.contrib import admin
 from django.urls import path, include
 from rest_framework import routers
 
-from finance.views import AccountsViewSet, TransactionsViewSet
+from finance.views import AccountsViewSet, TransferViewSet
 
 router = routers.DefaultRouter()
 router.register(r"accounts", AccountsViewSet)
-router.register(r"transactions", TransactionsViewSet)
+router.register(r"transactions", TransferViewSet)
 
 
 urlpatterns = [
