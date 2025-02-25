@@ -3,25 +3,60 @@ dj-database-url==2.3.0
 django-rest-framework==0.1.0
 Django==5.1.6
 djangorestframework==3.15.2
+google-genai==1.2.0
 psycopg2-binary==2.9.10
 python-dotenv==1.0.1
+vertexai==1.71.1
 
 # Development Dependencies
 # black==25.1.0
 # flake8==7.1.2
 
 # Subdependencies
+# annotated-types==0.7.0
 # asgiref==3.8.1
+# cachetools==5.5.2
+# certifi==2025.1.31
+# charset-normalizer==3.4.1
 # click==8.1.8
+# docstring_parser==0.16
+# google-api-core==2.24.1
+# google-auth==2.38.0
+# google-cloud-aiplatform==1.71.1
+# google-cloud-bigquery==3.29.0
+# google-cloud-core==2.4.2
+# google-cloud-resource-manager==1.14.1
+# google-cloud-storage==2.19.0
+# google-crc32c==1.6.0
+# google-resumable-media==2.7.2
+# googleapis-common-protos==1.68.0
+# grpc-google-iam-v1==0.14.0
+# grpcio-status==1.71.0rc2
+# grpcio==1.71.0rc2
+# idna==3.10
 # mccabe==0.7.0
 # mypy-extensions==1.0.0
+# numpy==2.2.3
 # packaging==24.2
 # pathspec==0.12.1
 # platformdirs==4.3.6
+# proto-plus==1.26.0
+# protobuf==5.29.3
+# pyasn1==0.6.1
+# pyasn1_modules==0.4.1
 # pycodestyle==2.12.1
+# pydantic==2.11.0a2
+# pydantic_core==2.29.0
 # pyflakes==3.2.0
+# python-dateutil==2.9.0.post0
+# requests==2.32.3
+# rsa==4.9
+# shapely==2.0.7
+# six==1.17.0
 # sqlparse==0.5.3
 # typing_extensions==4.12.2
+# urllib3==2.3.0
+# websockets==14.2
 
 # Python Dependencies
 # pip==25.0.1
